@@ -8,9 +8,9 @@ function startImageRotation(container) {
 
     container._currentIndex = 0;
 
-    if (container._intervalld) return;
+    if (container._intervalId) return;
 
-    container._intervalld = setInterval(() => {
+    container._intervalId = setInterval(() => {
         images[container._currentIndex].classList.remove("active");
         container._currentIndex = (container._currentIndex + 1) % images.length;
         images[container._currentIndex].classList.add("active");
@@ -20,8 +20,8 @@ function startImageRotation(container) {
 function stopImageRotation(container) {
     const images = container.querySelectorAll("img");
 
-    clearInterval(container._intervalld);
-    container._intervalld = null;
+    clearInterval(container._intervalId);
+    container._intervalId = null;
 
     images.forEach(img => img.classList.remove("active"));
     if (images.length > 0) {
