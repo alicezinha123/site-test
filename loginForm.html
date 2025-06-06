@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Glassmorphi login form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style_login.css"
+</head>
+<body>
+    <div class="wrapper">
+        <form id="loginForm"> <h1>Login</h1>
+
+            <div class="input-box">
+                <span class="icon"><i class="bx bx-user"></i></span>
+                <input type="text" placeholder="Username" required id="username"> <i class="bx bxs-user"></i> 
+            </div>
+            
+            <div class="input-box">
+                <input type="password" placeholder="Password" required id="password"> <i class="bx bxs-lock-alt"></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <p id="erroMssage" style="color: aqua; text-align: center; margin-top: 10px;"></p>
+            <div class="register-link">
+                <p>Don't have an account? <a href="#" register></a></p>
+            </div>
+        </form>
+    </div>
+
+<script>
+    /*
+Logica para verificar se o login foi realiado com sucesso ou nao.
+if(window lacation href includes("login=success")) {
+
+*/
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); //impede o envio padrão do formulario
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const erroMssage = document.getElementById('errorMessage');
+
+    //Simulaçao de autenticaçao (substitua por sua lógica real)
+    if (username === 'Alice' && password === 'admin123') {
+        //Autnticaçao bem-sucedida
+        localStorage.setItem('loggedIn', 'true'); //Define um sinal no localStorage
+        window.location.href ='index.html'; //Redirecionar para a pagina principal
+    }else{
+        //Autenticçao falhou
+        erroMssage.textContent = 'Usuario ou senha incorretos.';
+    }
+})
+</script>
+    
+</body>
+</html>

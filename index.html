@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Roupas</title>
+    <title>Minha Loja de Roupas</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Minha Loja de Roupas</h1>
         <nav>
+            <h1>Minha Loja</h1>
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Masculino</a></li>
-                <li><a href="#">Feminino</a></li>
-                <li><a href="#">Infantil</a></li>
+                <li><a href="#">Roupas Femininas</a></li>
+                <li><a href="#">Roupas Masculinas</a></li>
+                <li><a href="#">Acessórios</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
@@ -25,52 +25,54 @@
 
     <main>
         <section class="hero">
-            <h2>A elegância é um toque de charme</h2>
-            <p>Descubra as últimas tendências e peças exclusivas.</p>
-            <a href="#" class="btn">Ver Produtos</a>
+            <h2>Bem-vindo à nossa loja!</h2>
+            <p>Esqueça as regras: monte seu look dos sonhos e celebre sua liberdade.</p>
+            <button>Ver Produtos</button>
         </section>
 
         <section class="products">
             <h3>Nossos Produtos em Destaque</h3>
             <div class="product-grid">
                 <div class="product-item">
-                    <div class="product-images-hover" onmouseenter="startImageRotation(this)"
-                        onmouseleave="stopImageRotation(this)"></div>
-                    <img src="imagens/1718174036b781b4125d9c9f96acb1a66001b5ca84_thumbnail_405x552.jpg" alt="Camiseta">
+                    <div class="product-images-hover" onmouseenter="startImageRotation(this)" onmouseleave="stopImageRotation(this)">
+                        <img src="imagens/1722419845a4887ac45f5e34aad8e6844b671117db_thumbnail_405x552.jpg">
+                        <img src="imagens/1731481916a17d3be71308b0498583b1ae1093d7c9_thumbnail_384x.webp">
+                    </div>
+                    <h4>Jaqueta</h4>
+                    <p>R$ 249,99</p>
+                    <button>Adicionar ao Carrinho</butto>
                 </div>
-                <h4>Camiseta Básica</h4>
-                <p>R$ 49,90</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <div class="product-item">
-                <div class="product-images-hover" onmouseenter="startImageRotation(this)"
+                <div class="product-item">
+                    <div class="product-images-hover" onmouseenter="startImageRotation(this)" onmouseleave="stopImageRotation(this)">
+                     <div class="product-images-hover" onmouseenter="startImageRotation(this)"
                     onmouseleave="stopImageRotation(this)">
-                    <img src="imagens/1743671300d7a98a789e3b2502f28049851e01b1ac_thumbnail_405x552.jpg"
-                        alt="Calça Jeans">
+                    <img src="imagens/1728378861db84983bba1b1232cd1c76e10132b451_thumbnail_405x552.jpg" alt="Calça Jeans">
+                    <img src="imagens/1743671300d7a98a789e3b2502f28049851e01b1ac_thumbnail_405x552.jpg" alt="">
                 </div>
-                <h4>Calça Jeans Slim</h4>
-                <p>R$ 129,90</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <div class="product-item">
-                <div class="product-images-hover" onmouseenter="startImageRotation(this)"
-                    onmouseleave="stopImageRotation(this)">
-                <img src="imagens/1710299929dd9d44f84e5058e3c93c17cc85663d9e_thumbnail_405x552.jpg" alt="Vestido">
-            </div>
-            <h4>Vestido Floral</h4>
-            <p>R$ 89,90</p>
-            <button>Adicionar ao Carrinho</button>
-            </div>
-            <div class="product-item">
-                <div class="product-images-hover" onmouseenter="startImageRotation(this)"
-                    onmouseleave="stopImageRotation(this)">
-                <img src="imagens/1722419845a4887ac45f5e34aad8e6844b671117db_thumbnail_405x552.jpg" alt="Jaqueta">
-            </div>
-            <h4>Jaqueta de Couro</h4>
-            <p>R$ 199,90</p>
-            <button>Adicionar ao Carrinho</button>
-            </div>
-            
+                    </div>                      
+                    <h4>Calça Jeans</h4>
+                    <p>R$ 159,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-item">
+                    <div class="product-images-hover" onmouseenter="startImageRotation(this)" onmouseleave="stopImageRotation(this)">
+                    <img src="imagens/1739764834eceff65182fc223052405fbcf7a91183_thumbnail_405x552.jpg" >
+                    <img src="imagens/1710299929dd9d44f84e5058e3c93c17cc85663d9e_thumbnail_405x552.jpg" alt="">
+                    </div>
+                    <h4>Vestido</h4>
+                    <p>R$ 199,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-item">
+                    <div class="product-images-hover" onmouseenter="startImageRotation(this)" onmouseleave="stopImageRotation(this)">
+                    <img src="imagens/1718174036b781b4125d9c9f96acb1a66001b5ca84_thumbnail_405x552.jpg">
+                    <img src="imagens/1706894627e1949cd21cc7910ea576fbbb8687d8e1_thumbnail_405x552.jpg" alt="">
+                    </div>
+                    <h4>Camiseta basica</h4>
+                    <p>R$ 99,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+            </div>           
         </section>
     </main>
 
@@ -78,5 +80,4 @@
         <p>&copy; 2025 Minha Loja de Roupas. Todos os direitos reservados.</p>
     </footer>
 </body>
-
 </html>

@@ -8,14 +8,6 @@ body {
     color: #333;
 }
 
-/* Cabeçalho */
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -54,7 +46,7 @@ nav ul li a:hover {
 
 /* Seção Hero */
 .hero {
-    background-color: #555;
+    background-color: #79e3f1;
     color: white;
     text-align: center;
     padding: 4rem 20px;
@@ -178,4 +170,15 @@ footer {
     text-align: center;
     padding: 1.5rem 0;
     margin-top: 3rem;
+}
+
+/*cabeçalho*/
+header{
+
+    background-image: url("imagens/download\ \(1\).jpg");
+    background-size: cover;/*Ensensures the image covers the entire header*/
+    background-position: center;/*Centers the image*/
+    text-align: center;/*Centers the text within the header*/
+    padding: 60px 0;/*Adds some vertical padding to make the header tailler*/
+    position: relative;
 }
