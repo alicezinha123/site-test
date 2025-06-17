@@ -46,11 +46,12 @@ nav ul li a:hover {
 
 /* Seção Hero */
 .hero {
-    background-color: #79e3f1;
+    background-color: #a6e7e9;
     color: white;
     text-align: center;
     padding: 4rem 20px;
     margin-bottom: 2rem;
+    background-image: url(imagens/);
 }
 
 .hero h2 {
@@ -138,12 +139,12 @@ nav ul li a:hover {
 .product-item h4 {
     font-size: 1.3rem;
     margin-bottom: 10px;
-    color: #555;
+    color: #8d8d8d;
 }
 
 .product-item p {
     font-size: 1.1rem;
-    color: #777;
+    color: #00b135;
     margin-bottom: 15px;
     font-weight: bold;
 }
@@ -165,7 +166,7 @@ nav ul li a:hover {
 
 /* Rodapé */
 footer {
-    background-color: #333;
+    background-color: #a6e7e9;
     color: white;
     text-align: center;
     padding: 1.5rem 0;
@@ -175,10 +176,17 @@ footer {
 /*cabeçalho*/
 header{
 
-    background-image: url("imagens/download\ \(1\).jpg");
+ background-image: url(imagens/margaridas.jpg);
+    color: white;
     background-size: cover;/*Ensensures the image covers the entire header*/
     background-position: center;/*Centers the image*/
     text-align: center;/*Centers the text within the header*/
     padding: 60px 0;/*Adds some vertical padding to make the header tailler*/
     position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.product-images-hover img:first-child {
+    opacity: 1;
 }
